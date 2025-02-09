@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(90deg, rgba(7,9,34,1) 0%, rgba(13,14,32,1) 50%, rgba(7,9,34,1) 100%);
+}
+.menu-gradient {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,45,68,1) 50%, rgba(15,22,39,1) 100%);
+}
+.menu-text {
+    font-style: italic;
+}
+header {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    color: #DADADA;
+    background: rgb(7,9,34);
+    background: linear-gradient(90deg, rgba(7,9,34,1) 0%, rgba(13,45,68,1) 50%, rgba(15,22,39,1) 100%);
+}
+#logo {
+    display: inline-block;
+    background-image: url('../src/imgs/logo.png');
+    min-width: 60px;
+    min-height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
