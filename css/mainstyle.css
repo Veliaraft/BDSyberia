@@ -27,8 +27,8 @@ header {
 #logo {
     display: inline-block;
     background-image: url('../src/imgs/logo.png');
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 55px;
+    min-height: 55px;
     background-size: contain;
     background-repeat: no-repeat;
 }
