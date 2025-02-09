@@ -1,5 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: linear-gradient(90deg, rgba(7,9,34,1) 0%, rgba(13,14,32,1) 50%, rgba(7,9,34,1) 100%);
+}
+.g-text{
+    color: #01ED81;
 }
 .menu-gradient {
     background: rgb(2,0,36);
@@ -14,13 +20,24 @@ header {
     justify-content: space-between;
     color: #DADADA;
     background: rgb(7,9,34);
-    background: linear-gradient(90deg, rgba(7,9,34,1) 0%, rgba(13,45,68,1) 50%, rgba(15,22,39,1) 100%);
+    background-color: rgba(13,14,32,1);
+    animation: scrollOpacity auto linear;
+    animation-timeline: scroll(root);
 }
 #logo {
     display: inline-block;
     background-image: url('../src/imgs/logo.png');
-    min-width: 60px;
-    min-height: 60px;
+    min-width: 50px;
+    min-height: 50px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@keyframes scrollOpacity {
+    0% {
+        background-color: rgba(13,14,32,0);
+    }
+    20% {
+        background-color: rgba(13,14,32,1);
+    }
 }
