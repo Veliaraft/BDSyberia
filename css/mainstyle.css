@@ -29,6 +29,8 @@ header {
     min-width: 60px;
     min-height: 60px;
     overflow: hidden;
+    box-shadow: 16px 0 50px 40px rgba(24, 33, 73, 0.5),
+                -16px 0 50px 40px rgba(24, 33, 73, 0.5);
 }
 #flogo{
     display: block;
@@ -37,13 +39,14 @@ header {
     left: 0px;
     padding-top: 100%;
     padding-left: calc(padding-top);
-    background-image: url('../src/imgs/fbl2.png');
+    background-image: url('../src/imgs/fbl.png');
     background-size: 200% 100%;
     background-repeat: repeat;
+    filter: brightness(120%);
     animation: moving 10s linear infinite;
     z-index: 2;
-    box-shadow: inset 4px 0 4px 2px rgba(0, 0, 0, 0.2),
-                inset -4px 0 4px 2px rgba(255, 255, 255, 0.2)
+    box-shadow: inset 4px 0 8px 2px rgba(0, 0, 0, 0.6),
+                inset -4px 0 8px 2px rgba(255, 255, 255, 0.3);
 }
 #blogo{
     display: block;
@@ -53,10 +56,11 @@ header {
     margin-top: calc(-100%);
     padding-top: 100%;
     padding-left: calc(padding-top);
-    background-image: url('../src/imgs/fbl2.png');
+    background-image: url('../src/imgs/fbl.png');
     background-size: 200% 100%;
     background-repeat: repeat;
-    animation: moving 20s linear infinite reverse;
+    filter: brightness(60%);
+    animation: moving 15s linear infinite reverse;
     z-index: 1;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -79,6 +83,6 @@ header {
         background-position: 0% 0%;
     }
     100% {
-        background-position: 91% 0%;
+        background-position: 99% 0%;
     }
 }
