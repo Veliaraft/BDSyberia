@@ -24,13 +24,45 @@ header {
     animation: scrollOpacity auto linear;
     animation-timeline: scroll(root);
 }
-#logo {
-    display: inline-block;
-    background-image: url('../src/imgs/logo.png');
-    min-width: 55px;
-    min-height: 55px;
-    background-size: contain;
-    background-repeat: no-repeat;
+#mainlogo {
+    display: block;
+    min-width: 60px;
+    min-height: 60px;
+    overflow: hidden;
+}
+#flogo{
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-top: 100%;
+    padding-left: calc(padding-top);
+    background-image: url('../src/imgs/fbl2.png');
+    background-size: 200% 100%;
+    background-repeat: repeat;
+    animation: moving 10s linear infinite;
+    z-index: 2;
+    box-shadow: inset 4px 0 4px 2px rgba(0, 0, 0, 0.2),
+                inset -4px 0 4px 2px rgba(255, 255, 255, 0.2)
+}
+#blogo{
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: calc(-100%);
+    padding-top: 100%;
+    padding-left: calc(padding-top);
+    background-image: url('../src/imgs/fbl2.png');
+    background-size: 200% 100%;
+    background-repeat: repeat;
+    animation: moving 20s linear infinite reverse;
+    z-index: 1;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 @keyframes scrollOpacity {
@@ -39,5 +71,14 @@ header {
     }
     20% {
         background-color: rgba(13,14,32,1);
+    }
+}
+
+@keyframes moving {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 91% 0%;
     }
 }

@@ -44,7 +44,7 @@ let canopa = 0
 let stars_timer = setInterval(function() {
     if (canopa >= 1) clearInterval(stars_timer);
     else {
-        canopa += 0.05;
+        canopa += 0.05;     
         canvas.style.opacity = canopa;
     }
 }, 60);
