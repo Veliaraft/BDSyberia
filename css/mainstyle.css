@@ -23,7 +23,6 @@ header {
     background-color: rgba(13,14,32,1);
     animation: scrollOpacity auto linear;
     animation-timeline: scroll(root);
-    -webkit-animation: scrollOpacity auto linear;
 }
 #mainlogo {
     display: block;
@@ -45,7 +44,6 @@ header {
     background-repeat: repeat;
     filter: brightness(120%);
     animation: moving 10s linear infinite;
-    -webkit-animation: moving 10s infinite;
     z-index: 2;
     box-shadow: inset 4px 0 8px 2px rgba(0, 0, 0, 0.6),
                 inset -4px 0 8px 2px rgba(255, 255, 255, 0.3);
@@ -63,7 +61,6 @@ header {
     background-repeat: repeat;
     filter: brightness(60%);
     animation: moving 15s linear infinite reverse;
-    -webkit-animation: moving 15s infinite reverse;
     z-index: 1;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -80,10 +77,6 @@ header {
         background-color: rgba(13,14,32,1);
     }
 }
-@-webkit-keyframes scrollOpacity {
-    0% { -webkit-background-color: rgba(13,14,32,0); }
-    20% { -webkit-background-color: rgba(13,14,32,1); }
-}
 
 @keyframes moving {
     0% {
@@ -92,8 +85,4 @@ header {
     100% {
         background-position: 99% 0%;
     }
-}
-@-webkit-keyframes moving {
-    0% { -webkit-background-position: 0% 0%; }
-    100% { -webkit-background-position: 99% 0%; }
 }
