@@ -10,6 +10,7 @@ let stars = [];
 function random(min, max) {
     return Math.random() * (max - min) + min;
 }
+
 // Генерация звезд
 function stars_pos_innitalize(){
     stars = []
@@ -22,6 +23,7 @@ function stars_pos_innitalize(){
     }
 }
 stars_pos_innitalize();
+
 // Отображение звезд на canvas
 function drawStars() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
